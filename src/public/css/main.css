@@ -1,0 +1,43 @@
+body {
+    height: 100vh;
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, lightslategray, #102f96, lightslategray);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, lightslategray, #102f96, lightslategray); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.jumbotron {
+    background: lightgray;
+    padding: 2em;
+    border-radius: 1em;
+}
+.form-group {
+    margin: 1em;
+}
+.card {
+    margin: 0.5em;
+}
+.logo {
+    width: 40%;
+}
+.btn {
+    margin: 0.5em;
+}
+.nav-link {
+    text-align: center;
+    border-radius: 1em;
+    font-weight: 500;
+}
+.nav-link:hover {
+    background-color: #102f96;
+    color: lightgray !important;
+}
+.card {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+}
+h2 {
+    text-align: center;
+    color: lightgray;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}

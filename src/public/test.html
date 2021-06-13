@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const STRING_MONTHS = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", 
+                    "Julio", "Agosto", "Septiembre", "Octubre", "Nobiembre", "Diciembre"];
+        date = new Date("2021-01-02");
+        date2 = "20-1-2019";
+        console.log(formatDate(date)); 
+        console.log(formatDate(date2)); 
+        function formatDate(date) {
+            let day;
+            let month;
+            let year;
+            if (date instanceof Date) {
+                console.log("a");
+                day = date.getDate();
+                month = date.getMonth();
+                year = date.getFullYear();
+            } else {
+                dated = date.split('-');
+                day = parseInt(dated[0]);
+                month = parseInt(dated[1]) - 1;
+                year = parseInt(dated[2]);
+            }
+            return day + " de " + STRING_MONTHS[month] + " de " + year;
+        }
+    </script>
+</body>
+
+</html>

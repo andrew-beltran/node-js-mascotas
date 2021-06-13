@@ -1,0 +1,28 @@
+<section class="row">
+    <div >
+        <h2>Bienvenido {{username}}</h2>
+    </div>
+    {{#each pets }}
+    {{#unless owner_id}}
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h4>
+                    {{name}} {{!-- <a href="/pets/edit/{{_id}}"><i class="fas fa-edit"></i></a> --}}
+                </h4>
+                <p>
+                    {{race}}
+                </p>
+                {{#if ../username}}
+                <a href="/pets/adopt/{{_id}}" class="btn btn-danger">Adoptar</a>
+                {{/if}}
+                {{!-- <form action="/pets/delete/{{_id}}?_method=DELETE" method="POST">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button class="btn btn-danger btn-block btn-sm" type="submit">Delete</button>
+                </form> --}}
+            </div>
+        </div>
+    </div>
+    {{/unless}}
+    {{/each}}
+</section>
